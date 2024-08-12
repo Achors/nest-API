@@ -9,7 +9,7 @@ export class AirtimeService {
     provider: string,
     phoneNumber: string,
     amount: number,
-){
+  ) {
     return await this.prisma.airtimeTransaction.create({
       data: {
         provider,
