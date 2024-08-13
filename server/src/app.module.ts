@@ -5,9 +5,10 @@ import { AirtimeController } from './airtime/airtime.controller';
 import { AirtimeService } from './airtime/airtime.service';
 import { AirtimeModule } from './airtime/airtime.module';
 import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [AirtimeModule, UsersModule],
+  imports: [AirtimeModule, UsersModule, AuthModule],
   controllers: [AppController, AirtimeController],
   providers: [AppService, AirtimeService],
 })
